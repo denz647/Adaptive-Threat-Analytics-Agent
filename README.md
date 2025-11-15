@@ -11,7 +11,6 @@ ATA evolves over time by learning from real analyst decisions, reducing false po
 ### **Prerequisites**
 
 * **Python 3.10 / 3.11 recommended**
-* **pip** and **virtual environment** support enabled
 
 ---
 
