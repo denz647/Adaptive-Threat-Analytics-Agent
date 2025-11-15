@@ -1,23 +1,61 @@
 # Adaptive Threat Analytics Agent (Local Demo)
 
 ## Overview
-Local prototype that:
-- trains baselines from CSV logs (auth, process, firewall),
-- detects anomalies using IsolationForest,
-- correlates anomalies across sources,
-- explains the correlated events picturing a storyline using a LLM API
-- stores analyst feedback in FAISS vector memory and uses it in future reasoning. Feedback influence adaptive weights for Retraining the isolation forest model .
+Adaptive Threat Analytics Agent (ATA) is an AI-driven security analysis system designed to support SOC operations by automatically detecting suspicious activity, correlating related events into attack storylines, and continuously improving through analyst feedback.
+
+The system analyzes security logs to identify abnormal behavior patterns, correlates anomalies across multiple data sources, and generates clear, human-readable explanations of potential attacks using an LLM. Analysts can review the generated incident narrative and provide feedback (TP/FP with notes), which the system stores and uses to improve future detection accuracy through adaptive learning.
+
+ATA evolves over time by learning from real analyst decisions, reducing false positives, improving prioritization, and enabling faster security investigations.
 
 ## Setup
-1. Create and activate venv:
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate
-   ```
-2. Install:
-   ```bash
-   pip install -r requirements.txt
-   ```
+### **Prerequisites**
+
+* **Python 3.10 / 3.11 recommended**
+* **pip** and **virtual environment** support enabled
+
+---
+
+### **1. Clone the repository**
+
+```bash
+git clone https://github.com/denz647/Adaptive-Threat-Analytics-Agent.git
+cd Adaptive-Threat-Analytics-Agent
+```
+
+### **2. Create and activate a virtual environment**
+
+**Windows**
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+**Mac / Linux**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+### **3. Install required dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### **4. Run the application**
+
+```bash
+python src/ui.py
+```
+
+---
+
 
 ## Place your CSVs
 For customized training other than sample data Replace and Put your CSVs in `data/`:
@@ -27,7 +65,7 @@ For customized training other than sample data Replace and Put your CSVs in `dat
 - test_auth.csv, test_process.csv, test_attack.csv
 
 ## Environment variables for LLM API
-- Placed in the env file
+- Place your own API key for Open Router model : nvidia/nemotron-nano-12b-v2-vl:free
 
 ## Run (local)
 1. Run the Flask app:
