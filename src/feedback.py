@@ -113,13 +113,3 @@ def give_feedback(incident_id, explanation_text, label, comment):
     """Analyst provides feedback (TP/FP)."""
     store_feedback(incident_id, label, comment)
     adapt_weights(explanation_text, label)
-
-# === DEMO ===
-if __name__ == "__main__":
-    explanation = "Multiple failed logins followed by a successful one from the same host."
-    give_feedback("INC123", explanation, "TP", "Confirmed brute-force pattern")
-
-    print("Feedback stored and adaptive weights updated ✅")
-    sim = search_similar("Brute-force attack with repeated authentication failures", k=2)
-    print("Similar feedback found:", sim)
-    print("Adaptive score for INC123:", get_adaptive_score("INC123"))
