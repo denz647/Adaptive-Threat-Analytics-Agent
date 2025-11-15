@@ -84,7 +84,6 @@ Analyze the following correlated incidents:
 Please explain:
 1️⃣ The chronological attack flow.
 2️⃣ Attacker’s objective and behavior.
-3️⃣ Detection gaps and mitigation suggestions.
 """
             }
         ],
