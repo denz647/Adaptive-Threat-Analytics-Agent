@@ -1,0 +1,15 @@
+pandas
+numpy
+scikit-learn
+joblib
+python-dateutil
+fastapi
+uvicorn
+requests
+flask
+faiss-cpu
+sentence-transformers
+transformers
+sqlalchemy
+tqdm
+python-dotenv

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🧠 Adaptive Threat Hunting Agent</title>
+
+  <!-- ✅ Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f9fafc;
+      color: #222;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    h1, h2, h3 {
+      color: #0d6efd;
+      font-weight: 600;
+    }
+
+    .btn-custom {
+      margin: 4px;
+      font-weight: 600;
+      border-radius: 8px;
+    }
+
+    .card {
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      margin-bottom: 20px;
+    }
+
+    .table th {
+      background-color: #e9f2ff;
+    }
+
+    .feedback-box {
+      background: #f1f8ff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .feedback-confirm {
+      background: #d4edda;
+      padding: 10px 15px;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    .retrain-log {
+      background: #1e1e1e;
+      color: #00e676;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: monospace;
+    }
+
+    .auth { color: #0d6efd; }
+    .firewall { color: #fb8c00; }
+    .process { color: #2e7d32; }
+
+    pre {
+      background: #f8f9fa;
+      padding: 10px;
+      border-radius: 8px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container py-4">
+
+  <div class="text-center mb-4">
+    <h1>🧠 Agentic AI Threat Hunting Dashboard</h1>
+    <p class="text-muted">Adaptive Detection • Correlation • Explainability</p>
+  </div>
+
+  <!-- === ACTION BUTTONS === -->
+  <div class="d-flex flex-wrap justify-content-center mb-4">
+    <form method="post" action="/run/anomaly"><button class="btn btn-primary btn-custom">🚨 Detect Anomalies</button></form>
+    <form method="post" action="/run/correlate"><button class="btn btn-info btn-custom">🔗 Correlate Events</button></form>
+    <form method="post" action="/run/explain"><button class="btn btn-warning btn-custom text-white">🧩 Explain Results</button></form>
+    <form method="post" action="/run/retrain"><button class="btn btn-success btn-custom">⚙️ Retrain Model</button></form>
+    <a href="/clear" class="btn btn-outline-secondary btn-custom">🧹 Clear Session</a>
+  </div>
+
+  <hr>
+
+  <!-- === RESULTS SECTION === -->
+  <div class="card p-4">
+    <h2>📊 Results</h2>
+    <div class="mt-3">
+
+      {% if latest_action == "anomaly" %}
+        <h3>🚨 Detected Anomalies</h3>
+        {% if latest_data %}
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+              <thead class="table-light">
+                <tr><th>Source</th><th>Entity</th><th>Score</th><th>Event Type</th><th>Summary</th></tr>
+              </thead>
+              <tbody>
+              {% for a in latest_data %}
+                <tr>
+                  <td>{{ a.source }}</td>
+                  <td>{{ a.entity }}</td>
+                  <td>{{ a.score }}</td>
+                  <td>{{ a.event_type }}</td>
+                  <td>{{ a.summary }}</td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        {% else %}
+          <p><em>No anomalies found.</em></p>
+        {% endif %}
+
+      {% elif latest_action == "correlate" %}
+        <h3>🔗 Correlation Results</h3>
+        {% if latest_data %}
+          {% for c in latest_data %}
+            <div class="border rounded p-3 mb-3 bg-light">
+              <p><b>ID:</b> {{ c.incident_id }} | <b>Score:</b> {{ c.score }} | <b>Duration:</b> {{ c.duration }} mins</p>
+              <ul>
+                {% for e in c.events %}
+                <li class="{{ e.source }}">
+                  {{ e.timestamp }} — <b>{{ e.source }}</b> • {{ e.event_type }}
+                  {% set details = [] %}
+                  {% for k, v in e.items() %}
+                    {% if k not in ['timestamp', 'source', 'event_type'] and v %}
+                      {% set _ = details.append(k ~ ': ' ~ v) %}
+                    {% endif %}
+                  {% endfor %}
+                  {% if details %} | {{ details | join(' | ') }} {% endif %}
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endfor %}
+        {% else %}
+          <p><em>No correlation results.</em></p>
+        {% endif %}
+
+      {% elif latest_action == "explain" %}
+        <h3>🧩 Explanation Summary</h3>
+        {% if latest_data %}
+          <p><b>Incidents:</b> {{ latest_data.num_incidents }}</p>
+          <p><b>Correlation File:</b> {{ latest_data.correlation_file }}</p>
+          <p><b>Summary:</b> {{ latest_data.summary_text }}</p>
+          <pre>{{ latest_data.attack_chain }}</pre>
+
+          <!-- ✅ Feedback Section -->
+          <div class="feedback-box mt-4">
+            <h4>🗳 Analyst Feedback</h4>
+            <form method="post" action="/submit_feedback">
+              <div class="mb-3">
+                <label class="form-label">Incident ID:</label>
+                <input type="text" name="incident_id" class="form-control" placeholder="e.g., incident_001" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Label:</label>
+                <select name="label" class="form-select" required>
+                  <option value="TP">True Positive</option>
+                  <option value="FP">False Positive</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Comments:</label>
+                <textarea name="comment" class="form-control" rows="3" placeholder="Any notes or observations..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">💬 Submit Feedback</button>
+            </form>
+          </div>
+        {% else %}
+          <p><em>No explanations yet.</em></p>
+        {% endif %}
+
+      {% elif latest_action == "retrain" %}
+        <h3>⚙️ Retraining Summary</h3>
+        <pre>{{ latest_data | tojson(indent=2) }}</pre>
+        {% if retrain_output %}
+          <div class="retrain-log mt-3">
+            <h5>🧠 Retrain Log:</h5>
+            <pre>{{ retrain_output }}</pre>
+          </div>
+        {% endif %}
+
+      {% else %}
+        <p><em>No results yet. Click a button above to start.</em></p>
+      {% endif %}
+
+    </div>
+  </div>
+
+  <!-- ✅ Feedback Confirmation -->
+  {% if feedback_submitted %}
+    <div class="feedback-confirm mt-4">
+      ✅ Feedback stored for <b>{{ feedback_incident }}</b> |
+      Adaptive Score: <b>{{ adaptive_score }}</b>
+    </div>
+  {% endif %}
+
+  <p class="text-muted mt-3">🕒 Last refreshed: {{ last_refresh }} |
+    <strong>Agentic AI v1.0</strong></p>
+
+</div>
+
+</body>
+</html>

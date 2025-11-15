@@ -1,0 +1,217 @@
+timestamp,host,username,process_name,parent_process,cmdline,event_type
+2025-10-26T19:24:36.606025,10.0.0.22,jon,proc.exe,svchost.exe,proc.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T03:07:33.606025,10.0.0.12,dave1,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-30T04:42:18.606025,10.0.0.22,alice-user,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T06:58:17.606025,10.0.0.29,eva1,proc.exe,svchost.exe,proc.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T17:20:23.606025,10.0.0.36,jon,proc.exe,svchost.exe,proc.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T07:05:30.606025,10.0.0.20,bob,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-30T02:53:23.606025,10.0.0.17,jon.admin,regsvr32.exe,svchost.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T20:19:55.606025,10.0.0.28,eva1,proc.exe,svchost.exe,proc.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T00:14:57.606025,10.0.0.27,harry_svc,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-26T10:38:23.606025,10.0.0.35,alice,powershell.exe,wmic.exe,powershell.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T03:32:19.606025,10.0.0.37,bob01,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T02:14:52.606025,10.0.0.25,jon.admin,wmic.exe,rundll32.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T10:50:52.606025,10.0.0.33,dave.admin,mimikatz.exe,svchost.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T17:41:39.606025,10.0.0.26,jon01,wmic.exe,rundll32.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T15:40:29.606025,10.0.0.21,dave01,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-30T03:43:49.606025,10.0.0.15,harry_svc,wmic.exe,rundll32.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T21:31:36.606025,10.0.0.26,dave1,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-26T11:38:41.606025,10.0.0.30,jon.admin,rundll32.exe,wmic.exe,rundll32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T20:00:51.606025,10.0.0.36,eva1,wmic.exe,rundll32.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T18:13:50.606025,10.0.0.30,bob,payload.exe,svchost.exe,payload.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T07:13:40.606025,10.0.0.24,alice1,cscript.exe,rundll32.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T01:23:42.606025,10.0.0.37,eva-user,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T12:56:11.606025,10.0.0.37,jon.admin,rundll32.exe,rundll32.exe,rundll32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T22:25:12.606025,10.0.0.39,bob1,cscript.exe,rundll32.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T03:08:59.606025,10.0.0.35,bob_svc,mimikatz.exe,wmic.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T00:19:12.606025,10.0.0.12,harry_svc,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T14:56:51.606025,10.0.0.39,jon,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T10:07:42.606025,10.0.0.38,bob,rundll32.exe,rundll32.exe,rundll32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T01:20:46.606025,10.0.0.37,eva-user,regsvr32.exe,wmic.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T00:26:49.606025,10.0.0.39,jon,wmic.exe,rundll32.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T19:38:23.606025,10.0.0.19,jon01,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-30T02:33:35.606025,10.0.0.19,jon.admin,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-30T01:42:04.606025,10.0.0.27,jon01,regsvr32.exe,powershell.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T01:30:17.606025,10.0.0.15,bob-user,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T14:55:50.606025,10.0.0.21,bob-user,wmic.exe,rundll32.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T04:04:40.606025,10.0.0.35,alice1,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T19:33:29.606025,10.0.0.19,jon01,rundll32.exe,powershell.exe,rundll32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T01:58:54.606025,10.0.0.14,eva-user,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T05:29:00.606025,10.0.0.19,bob-user,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-30T04:01:58.606025,10.0.0.31,dave.admin,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T18:40:18.606025,10.0.0.27,jon.admin,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-29T00:58:55.606025,10.0.0.34,jon1,rundll32.exe,svchost.exe,rundll32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T10:14:44.606025,10.0.0.26,bob-user,mimikatz.exe,svchost.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T20:43:06.606025,10.0.0.27,dave.admin,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T20:06:57.606025,10.0.0.21,bob,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T00:41:29.606025,10.0.0.24,dave01,proc.exe,svchost.exe,proc.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T05:11:26.606025,10.0.0.12,alice1,cscript.exe,wmic.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T03:20:02.606025,10.0.0.10,ida,proc.exe,powershell.exe,proc.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T20:44:55.606025,10.0.0.14,bob01,psexec.exe,svchost.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T07:16:18.606025,10.0.0.24,alice1,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T22:43:45.606025,10.0.0.27,jon,rundll32.exe,wmic.exe,rundll32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T01:48:09.606025,10.0.0.10,bob,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-30T03:59:01.606025,10.0.0.31,dave.admin,payload.exe,rundll32.exe,payload.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T12:27:03.606025,10.0.0.28,bob-user,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-26T22:07:48.606025,10.0.0.13,jon,psexec.exe,wmic.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T01:34:09.606025,10.0.0.20,bob1,powershell.exe,rundll32.exe,powershell.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T16:48:32.606025,10.0.0.31,alice1,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T13:26:14.606025,10.0.0.30,ida1,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T03:49:54.606025,10.0.0.11,jon.admin,psexec.exe,powershell.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T04:24:40.606025,10.0.0.20,jon.admin,wmic.exe,rundll32.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T10:47:22.606025,10.0.0.29,eva-user,psexec.exe,svchost.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T07:44:29.606025,10.0.0.33,jon.admin,mimikatz.exe,rundll32.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T05:09:40.606025,10.0.0.18,bob1,payload.exe,svchost.exe,payload.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T21:28:18.606025,10.0.0.26,dave1,cscript.exe,rundll32.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T09:27:18.606025,10.0.0.24,jon.admin,payload.exe,rundll32.exe,payload.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T15:23:31.606025,10.0.0.35,alice1,regsvr32.exe,rundll32.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T14:24:56.606025,10.0.0.34,jon.admin,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-29T05:45:19.606025,10.0.0.39,bob,regsvr32.exe,wmic.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T13:42:50.606025,10.0.0.29,eva1,payload.exe,powershell.exe,payload.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T18:54:33.606025,10.0.0.15,bob-user,mimikatz.exe,svchost.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T10:09:55.606025,10.0.0.38,bob,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-29T13:45:36.606025,10.0.0.30,jon.admin,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T01:10:25.606025,10.0.0.11,eva-user,wmic.exe,svchost.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T04:12:52.606025,10.0.0.27,alice1,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T12:24:26.606025,10.0.0.28,bob-user,rundll32.exe,svchost.exe,rundll32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T13:40:57.606025,10.0.0.30,jon.admin,proc.exe,powershell.exe,proc.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T07:00:13.606025,10.0.0.36,eva-user,powershell.exe,powershell.exe,powershell.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T22:47:07.606025,10.0.0.15,dave_svc,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-26T15:30:22.606025,10.0.0.39,bob,rundll32.exe,wmic.exe,rundll32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T09:43:04.606025,10.0.0.16,eva-user,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-29T21:42:24.606025,10.0.0.10,jon,mimikatz.exe,svchost.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T05:57:46.606025,10.0.0.38,frank.admin,payload.exe,powershell.exe,payload.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T15:38:52.606025,10.0.0.17,bob1,cscript.exe,wmic.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T20:44:57.606025,10.0.0.37,bob01,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-29T21:28:18.606025,10.0.0.35,bob-user,proc.exe,rundll32.exe,proc.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T09:38:34.606025,10.0.0.22,dave.admin,regsvr32.exe,powershell.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T09:44:54.606025,10.0.0.37,jon1,powershell.exe,powershell.exe,powershell.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T07:02:29.606025,10.0.0.20,bob,regsvr32.exe,powershell.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T12:26:46.606025,10.0.0.37,harry_svc,powershell.exe,wmic.exe,powershell.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T23:28:36.606025,10.0.0.25,harry_svc,cscript.exe,powershell.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T03:38:05.606025,10.0.0.24,jon.admin,psexec.exe,powershell.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T10:42:34.606025,10.0.0.30,dave_svc,proc.exe,powershell.exe,proc.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T02:25:57.606025,10.0.0.22,dave01,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T22:28:42.606025,10.0.0.39,bob1,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T02:15:57.606025,10.0.0.25,jon.admin,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-26T18:45:45.606025,10.0.0.27,eva-user,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T07:58:42.606025,10.0.0.32,bob1,mimikatz.exe,wmic.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T06:16:02.606025,10.0.0.35,jon.admin,wmic.exe,powershell.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T18:51:03.606025,10.0.0.17,frank.admin,regsvr32.exe,svchost.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T18:01:02.606025,10.0.0.19,jon.admin,mimikatz.exe,wmic.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T18:57:03.606025,10.0.0.13,eva1,powershell.exe,powershell.exe,powershell.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T10:45:50.606025,10.0.0.10,bob01,psexec.exe,svchost.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T04:27:03.606025,10.0.0.20,jon.admin,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-29T21:34:48.606025,10.0.0.12,alice-user,mimikatz.exe,svchost.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T20:41:38.606025,10.0.0.27,dave.admin,cscript.exe,powershell.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T07:00:39.606025,10.0.0.35,eva1,cscript.exe,rundll32.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T12:29:50.606025,10.0.0.37,harry_svc,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-30T02:57:39.606025,10.0.0.17,jon.admin,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T03:21:03.606025,10.0.0.10,bob,powershell.exe,svchost.exe,powershell.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T21:13:18.606025,10.0.0.15,ida,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T18:36:18.606025,10.0.0.39,frank.admin,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T05:15:31.606025,10.0.0.34,gina,cscript.exe,powershell.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T03:23:32.606025,10.0.0.13,dave1,payload.exe,rundll32.exe,payload.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T19:28:52.606025,10.0.0.22,jon,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-29T21:39:53.606025,10.0.0.22,bob,regsvr32.exe,rundll32.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T07:14:49.606025,10.0.0.27,alice,powershell.exe,wmic.exe,powershell.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T05:49:59.606025,10.0.0.39,bob,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-29T13:38:10.606025,10.0.0.20,harry_svc,psexec.exe,powershell.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T05:18:45.606025,10.0.0.34,gina,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-29T22:43:34.606025,10.0.0.15,dave_svc,proc.exe,powershell.exe,proc.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T07:17:53.606025,10.0.0.27,alice,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-30T01:47:08.606025,10.0.0.10,bob,cscript.exe,rundll32.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T20:04:15.606025,10.0.0.21,bob,regsvr32.exe,wmic.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T02:06:58.606025,10.0.0.35,ida,regsvr32.exe,svchost.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T01:02:01.606025,10.0.0.14,frank.admin,wmic.exe,powershell.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T17:44:22.606025,10.0.0.26,jon01,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T23:27:14.606025,10.0.0.19,ida,psexec.exe,powershell.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T21:31:22.606025,10.0.0.35,bob-user,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T09:39:01.606025,10.0.0.16,eva-user,cscript.exe,svchost.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T02:24:47.606025,10.0.0.22,dave01,payload.exe,powershell.exe,payload.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T18:44:05.606025,10.0.0.19,harry_svc,payload.exe,svchost.exe,payload.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T01:20:22.606025,10.0.0.27,dave1,mimikatz.exe,powershell.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T07:26:19.606025,10.0.0.22,gina,payload.exe,rundll32.exe,payload.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T08:20:50.606025,10.0.0.11,eva1,psexec.exe,wmic.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T21:39:29.606025,10.0.0.12,alice-user,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-26T15:33:50.606025,10.0.0.39,bob,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-26T16:13:18.606025,10.0.0.34,jon1,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T14:56:31.606025,10.0.0.16,dave.admin,powershell.exe,powershell.exe,powershell.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T13:26:59.606025,10.0.0.13,jon1,proc.exe,wmic.exe,proc.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T13:54:46.606025,10.0.0.10,bob,regsvr32.exe,rundll32.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T01:15:22.606025,10.0.0.25,eva1,regsvr32.exe,svchost.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T10:06:15.606025,10.0.0.33,jon.admin,cscript.exe,svchost.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T18:41:19.606025,10.0.0.27,eva-user,psexec.exe,rundll32.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T11:13:43.606025,10.0.0.26,dave_svc,psexec.exe,svchost.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T16:46:00.606025,10.0.0.31,alice1,wmic.exe,svchost.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T09:28:47.606025,10.0.0.24,jon.admin,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T20:44:33.606025,10.0.0.37,bob01,mimikatz.exe,svchost.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T05:11:32.606025,10.0.0.18,bob1,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-29T21:10:47.606025,10.0.0.15,ida,wmic.exe,powershell.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T02:21:27.606025,10.0.0.11,jon.admin,powershell.exe,svchost.exe,powershell.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T18:38:31.606025,10.0.0.27,jon.admin,regsvr32.exe,wmic.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T23:35:34.606025,10.0.0.27,jon.admin,proc.exe,wmic.exe,proc.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T20:51:04.606025,10.0.0.30,bob,payload.exe,svchost.exe,payload.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T22:07:29.606025,10.0.0.39,dave1,mimikatz.exe,svchost.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T17:44:08.606025,10.0.0.13,dave_svc,wmic.exe,svchost.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T05:26:47.606025,10.0.0.19,bob-user,mimikatz.exe,powershell.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T04:39:54.606025,10.0.0.22,alice-user,mimikatz.exe,wmic.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T20:30:49.606025,10.0.0.14,ida1,regsvr32.exe,svchost.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T17:58:02.606025,10.0.0.30,bob,cscript.exe,rundll32.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T04:55:21.606025,10.0.0.21,bob01,cscript.exe,svchost.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T08:14:39.606025,10.0.0.33,eva1,psexec.exe,rundll32.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T16:27:07.606025,10.0.0.14,frank.admin,payload.exe,powershell.exe,payload.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T20:56:40.606025,10.0.0.10,ida1,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-29T20:49:54.606025,10.0.0.14,bob01,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-26T08:01:38.606025,10.0.0.21,jon01,mimikatz.exe,powershell.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T09:26:28.606025,10.0.0.16,gina.admin,psexec.exe,powershell.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T03:59:44.606025,10.0.0.35,alice1,proc.exe,rundll32.exe,proc.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T07:15:52.606025,10.0.0.33,gina.admin,cscript.exe,rundll32.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T02:30:29.606025,10.0.0.19,jon.admin,cscript.exe,rundll32.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T01:24:28.606025,10.0.0.22,alice1,proc.exe,rundll32.exe,proc.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T00:14:24.606025,10.0.0.12,harry_svc,rundll32.exe,powershell.exe,rundll32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T13:24:14.606025,10.0.0.30,ida1,psexec.exe,powershell.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T11:56:21.606025,10.0.0.16,jon01,cscript.exe,powershell.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T13:55:36.606025,10.0.0.10,bob,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T10:19:51.606025,10.0.0.19,dave.admin,powershell.exe,wmic.exe,powershell.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T03:52:12.606025,10.0.0.11,jon.admin,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T03:27:48.606025,10.0.0.37,bob01,wmic.exe,svchost.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T16:29:29.606025,10.0.0.22,gina,powershell.exe,svchost.exe,powershell.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T00:11:05.606025,10.0.0.27,harry_svc,wmic.exe,wmic.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T14:20:40.606025,10.0.0.34,jon.admin,mimikatz.exe,svchost.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T19:12:25.606025,10.0.0.34,jon01,rundll32.exe,svchost.exe,rundll32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T15:47:13.606025,10.0.0.34,gina.admin,wmic.exe,svchost.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T01:35:28.606025,10.0.0.13,jon1,proc.exe,rundll32.exe,proc.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T09:45:35.606025,10.0.0.17,ida,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T06:26:14.606025,10.0.0.17,jon.admin,regsvr32.exe,svchost.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T01:27:34.606025,10.0.0.15,bob-user,wmic.exe,wmic.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T19:01:37.606025,10.0.0.13,eva1,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T03:25:36.606025,10.0.0.13,dave1,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T09:44:15.606025,10.0.0.17,ida,mimikatz.exe,wmic.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T01:18:21.606025,10.0.0.25,eva1,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T14:53:40.606025,10.0.0.39,jon,wmic.exe,svchost.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T15:38:37.606025,10.0.0.21,dave01,cscript.exe,powershell.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T17:24:28.606025,10.0.0.16,frank.admin,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T18:31:46.606025,10.0.0.39,frank.admin,wmic.exe,wmic.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T17:24:16.606025,10.0.0.16,frank.admin,payload.exe,rundll32.exe,payload.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T10:23:19.606025,10.0.0.19,dave.admin,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-28T02:48:21.606025,10.0.0.28,bob-user,powershell.exe,rundll32.exe,powershell.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T09:32:45.606025,10.0.0.12,alice-user,mimikatz.exe,wmic.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T20:55:52.606025,10.0.0.10,ida1,mimikatz.exe,wmic.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T08:24:52.606025,10.0.0.37,bob1,mimikatz.exe,powershell.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T17:45:48.606025,10.0.0.13,dave_svc,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-26T11:39:51.606025,10.0.0.30,jon.admin,powershell.exe,services.exe,spawned for lateral movement,process_create
+2025-10-26T16:12:26.606025,10.0.0.34,jon1,psexec.exe,wmic.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T09:42:50.606025,10.0.0.22,dave.admin,psexec.exe,services.exe,spawned for lateral movement,process_create
+2025-10-27T11:42:46.606025,10.0.0.13,jon1,regsvr32.exe,powershell.exe,regsvr32.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T03:05:40.606025,10.0.0.12,dave1,cscript.exe,svchost.exe,cscript.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T15:23:15.606025,10.0.0.32,jon01,powershell.exe,wmic.exe,powershell.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-29T07:04:18.606025,10.0.0.23,jon,psexec.exe,wmic.exe,psexec.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T18:54:30.606025,10.0.0.39,jon.admin,powershell.exe,rundll32.exe,powershell.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T01:57:40.606025,10.0.0.14,eva-user,wmic.exe,rundll32.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-26T22:03:18.606025,10.0.0.37,bob1,wmic.exe,rundll32.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-30T03:48:16.606025,10.0.0.15,harry_svc,rundll32.exe,services.exe,spawned for lateral movement,process_create
+2025-10-29T20:40:43.606025,10.0.0.36,ida,wmic.exe,svchost.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-28T15:15:05.606025,10.0.0.36,ida,payload.exe,rundll32.exe,payload.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T04:09:06.606025,10.0.0.27,alice1,mimikatz.exe,svchost.exe,mimikatz.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
+2025-10-27T15:44:40.606025,10.0.0.22,eva1,wmic.exe,rundll32.exe,wmic.exe -run -dump lsass -out c:\windows\temp\dump.dmp,process_create
