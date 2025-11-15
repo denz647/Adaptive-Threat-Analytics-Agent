@@ -1,4 +1,4 @@
-# Adaptive Threat Analytics Agent (Local Demo)
+# Adaptive Threat Analytics Agent
 
 ## Overview
 Adaptive Threat Analytics Agent (ATA) is an AI-driven security analysis system designed to support SOC operations by automatically detecting suspicious activity, correlating related events into attack storylines, and continuously improving through analyst feedback.
